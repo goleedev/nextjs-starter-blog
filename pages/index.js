@@ -13,15 +13,15 @@ export default function Home({ posts }) {
           <header className="mb-2">
             <h3 className="mb-2">
               <Link href={"/post/[slug]"} as={`/post/${slug}`}>
-                <a className="text-4xl font-bold text-yellow-600 font-display">
+                <a className="text-4xl font-bold text-new-red font-display dark:text-new-light-red">
                   {title}
                 </a>
               </Link>
             </h3>
-            <span className="text-sm">{date}</span>
+            <span className="text-sm text-new-gray dark:text-new-white">{date}</span>
           </header>
           <section>
-            <p className="mb-8 text-lg">{description}</p>
+            <p className="mb-8 text-lg text-new-gray dark:text-new-white">{description}</p>
           </section>
         </article>
       ))}

@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-blog-starter",
+  "name": "GO Lee",
   "version": "0.2.0",
-  "description": "A Next.js template for a blog website.",
+  "description": "A blog website owned by GO",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
+import style from "react-syntax-highlighter/dist/cjs/styles/prism/twilight";
 
 import { Layout, Image, SEO, Bio } from "@components/common";
 import { getPostBySlug, getPostsSlugs } from "@utils/posts";
@@ -16,10 +16,10 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
 
       <article>
         <header className="mb-8">
-          <h1 className="mb-2 text-6xl font-black leading-none font-display">
+          <h1 className="mb-2 text-6xl font-black text-new-gray leading-none font-display dark:text-new-white">
             {frontmatter.title}
           </h1>
-          <p className="text-sm">{frontmatter.date}</p>
+          <p className="text-sm new-gray dark:text-new-white">{frontmatter.date}</p>
         </header>
         <ReactMarkdown
           className="mb-4 prose lg:prose-lg dark:prose-dark"
@@ -29,7 +29,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
         />
         <hr className="mt-4" />
         <footer>
-          <Bio className="mt-8 mb-16" />
+          <Bio className="mt-8 mb-16 text-new-gray dark:text-new-white" />
         </footer>
       </article>
 

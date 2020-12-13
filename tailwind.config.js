@@ -37,7 +37,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "neon-orange": "#f92300",
+        "new-red": "#F1825E",
+        "new-light-red": "#FFA88B",
+        "new-gray": "#2E343F",
+        "new-black": "#1d2323",
+        "new-white": "#fafafa",
       },
       fontSize: {
         "7xl": "4.5rem",
@@ -59,7 +63,7 @@ module.exports = {
               backgroundColor: theme("colors.gray.700"),
             },
             a: {
-              color: theme("colors.neon-orange"),
+              color: theme("colors.new-red"),
             },
           },
         },
@@ -77,7 +81,7 @@ module.exports = {
               backgroundColor: theme("colors.gray.300"),
             },
             a: {
-              color: theme("colors.yellow.500"),
+              color: theme("colors.new-light-red"),
             },
             h1: {
               color: theme("colors.gray.100"),
@@ -115,7 +119,7 @@ module.exports = {
       }),
     },
     fontFamily: {
-      display: ["Open Sans", ...defaultSans],
+      display: ["Noto Sans", ...defaultSans],
       body: ["Merriweather", ...defaultSerif],
     },
   },

@@ -7,14 +7,14 @@ import { useTheme } from "next-themes";
 
 export function Layout({ children }) {
   return (
-    <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
+    <div className="w-full min-h-screen dark:bg-new-black dark:text-new-white">
       <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
-        <footer className="text-lg font-light">
-          © {new Date().getFullYear()}, Built with{" "}
-          <a href="https://nextjs.org/">Next.js</a>
-          &#128293;
+        <footer className="text-lg font-light text-new-gray dark:text-new-white">
+          {new Date().getFullYear()} &copy; {" "}
+          <a href="mailto:golee.dev@gmail.com">Go Lee </a>
+          All rights reserved.
         </footer>
       </div>
     </div>
@@ -64,9 +64,9 @@ const LargeTitle = () => (
     <Link href="/">
       <a
         className={clsx(
-          "text-3xl font-black leading-none text-black no-underline font-display",
+          "text-3xl font-black leading-none text-new-gray no-underline font-display",
           "sm:text-5xl",
-          "dark:text-white"
+          "dark:text-new-white"
         )}
       >
         Next.Js Starter Blog
@@ -80,8 +80,8 @@ const SmallTitle = () => (
     <Link href="/">
       <a
         className={clsx(
-          "text-2xl font-black text-black no-underline font-display",
-          "dark:text-white"
+          "text-2xl font-black text-new-gray no-underline font-display",
+          "dark:text-new-white"
         )}
       >
         Next.Js Starter Blog
