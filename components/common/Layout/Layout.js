@@ -69,7 +69,7 @@ const LargeTitle = () => (
           "dark:text-new-white"
         )}
       >
-        Next.Js Starter Blog
+        golee.dev
       </a>
     </Link>
   </h1>
@@ -84,7 +84,7 @@ const SmallTitle = () => (
           "dark:text-new-white"
         )}
       >
-        Next.Js Starter Blog
+        golee.dev
       </a>
     </Link>
   </h1>

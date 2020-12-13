@@ -19,7 +19,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           <h1 className="mb-2 text-6xl font-black text-new-gray leading-none font-display dark:text-new-white">
             {frontmatter.title}
           </h1>
-          <p className="text-sm new-gray dark:text-new-white">{frontmatter.date}</p>
+          <p className="text-sm text-new-gray dark:text-new-white">{frontmatter.date}</p>
         </header>
         <ReactMarkdown
           className="mb-4 prose lg:prose-lg dark:prose-dark"
