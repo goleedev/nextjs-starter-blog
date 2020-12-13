@@ -24,8 +24,8 @@ export function SEO({ title, description = "" }) {
       <meta name="instagram:title" content={title} />
       <meta name="instagram:description" content={metaDescription} />
       <meta name="instagram:creator" content={siteMetadata.social.instagram} />
-      <link rel="icon" type="image/png" href="../../../content/assets/favicon.ico" />
-      <link rel="apple-touch-icon" href="../../../content/assets/favicon.ico" />
+      <link rel="icon" type="image/png" href="/static/favicon.ico" />
+      <link rel="apple-touch-icon" href="/static/favicon.ico" />
     </Head>
   );
 }
