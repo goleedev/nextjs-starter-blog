@@ -2,7 +2,7 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/twilight";
-
+import gfm from 'remark-gfm';
 import { Layout, Image, SEO, Bio } from "@components/common";
 import { getPostBySlug, getPostsSlugs } from "@utils/posts";
 
@@ -13,7 +13,6 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
       />
-
       <article>
         <header className="mb-8">
           <h1 className="mb-2 text-6xl font-black text-new-gray leading-none font-display dark:text-new-white">
@@ -25,6 +24,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           className="mb-4 prose lg:prose-lg dark:prose-dark"
           escapeHtml={false}
           source={post.content}
+          plugins={[gfm]}
           renderers={{ code: CodeBlock, image: MarkdownImage }}
         />
         <hr className="mt-4" />
@@ -32,7 +32,6 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           <Bio className="mt-8 mb-16 text-new-gray dark:text-new-white" />
         </footer>
       </article>
-
       <nav className="flex flex-wrap justify-between mb-10">
         {previousPost ? (
           <Link href={"/post/[slug]"} as={`/post/${previousPost.slug}`}>
