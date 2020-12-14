@@ -36,7 +36,7 @@ export default function Home({ posts }) {
   return (
     <Layout>
       <SEO title="All Posts" />
-      <link rel="icon" type="image/png" href="./favicon.ico" />
+      <link rel="shortcut icon" href="./favicon.ico" />
       <Bio className="mt-14" />
       <div className="mt-8 mb-12">
         <span id="All" onClick={onCategory} className="mr-3 text-new-red font-normal text-lg font-display cursor-pointer dark:text-new-white">All</span>
