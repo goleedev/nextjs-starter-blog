@@ -2,7 +2,7 @@
 
 title: 3 Free Bootstrap Builders for Frontend Developers 🏗️
 description: Which to use to build frontend with bootstrap?
-category: Style
+category: TIL
 date: 2020-11-23
 
 ---

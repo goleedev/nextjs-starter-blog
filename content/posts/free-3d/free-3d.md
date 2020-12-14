@@ -2,7 +2,7 @@
 
 title: Free 3D Resources for Developers 🆓
 description: Where to find 3D resource for websites
-category: Style
+category: TIL
 date: 2020-11-25
 
 ---

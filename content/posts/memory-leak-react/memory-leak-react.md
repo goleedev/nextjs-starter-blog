@@ -2,7 +2,7 @@
 
 title: Stop Memory Leaks in React useEffect Hook 🪝
 description: Getting memory leak warning? Check this out.
-category: React
+category: ReactJS
 date: 2020-11-30
 
 ---

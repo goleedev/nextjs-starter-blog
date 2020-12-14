@@ -2,7 +2,7 @@
 
 title: How to Turn Off AOS on Mobile 📴
 description: Sometimes we just don't want animations
-category: 'TIL'
+category: TIL
 date: 2020-11-29
 
 ---

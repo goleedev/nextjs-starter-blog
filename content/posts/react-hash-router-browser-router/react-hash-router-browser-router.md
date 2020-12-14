@@ -2,7 +2,7 @@
 
 title: Differences between HashRouter & BrowserRouter ⚖️
 description: What makes them different?
-category: React
+category: ReactJS
 date: 2020-11-30
 
 ---

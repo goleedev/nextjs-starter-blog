@@ -1,7 +1,7 @@
 ---
 
 title: Algorithm Question 1 🧬
-category: DS & Algorithms
+category: TIL
 description: Getting ready for algorithm test! | Question 1
 date: 2020-11-26
 

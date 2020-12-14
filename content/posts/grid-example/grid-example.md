@@ -1,7 +1,7 @@
 ---
 title: Grid Example로 CSS Grid 손쉽게 활용하기 🏁
 description: How to use CSS Grid with Grid Example
-category: Style
+category: TIL
 date: 2020-08-24
 ---
 

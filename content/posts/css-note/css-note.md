@@ -2,7 +2,7 @@
 
 title: CSS Styles Note (Updated on Nov 2020) 📓
 description: Stack CSS info I need
-category: Style
+category: TIL
 date: 2020-11-25
 
 ---

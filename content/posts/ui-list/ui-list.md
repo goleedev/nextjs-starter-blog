@@ -2,7 +2,8 @@
 
 title: List of UI Inspirations 2020 ✔️
 description: When need some ui inspirations
-category: Style
+category: TIL
+status: active
 date: 2020-12-01
 
 ---

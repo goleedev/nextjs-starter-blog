@@ -2,7 +2,7 @@
 
 title: How to Filter on Firestore 🗂️
 description: Filter out queries on firestore!
-category: Firebase
+category: TIL
 date: 2020-11-29
 
 ---

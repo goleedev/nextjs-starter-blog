@@ -1,15 +1,48 @@
 import Link from "next/link";
+import { useState } from "react";
 import LazyLoad from 'react-lazyload';
 import Fade from 'react-reveal/Fade';
 import { Layout, Bio, SEO } from "@components/common";
 import { getSortedPosts } from "@utils/posts";
 
 export default function Home({ posts }) {
+  const [currentCategory, setCurrentCategory] = useState("All");
+  const onCategory = (event) => {
+    const {
+      target: { id },
+    } = event;
+    document.getElementById("All").style.fontWeight = "400";
+    document.getElementById("TIL").style.fontWeight = "400";
+    document.getElementById("JavaScript").style.fontWeight = "400";
+    document.getElementById("ReactJS").style.fontWeight = "400";
+    document.getElementById("NextJS").style.fontWeight = "400";
+    document.getElementById("Career").style.fontWeight = "400";
+    document.getElementById("All").classList.remove("text-new-red");
+    document.getElementById("All").style = "#1d2323 dark:#fafafa";
+    document.getElementById("TIL").style = "#1d2323 dark:#fafafa";
+    document.getElementById("JavaScript").style = "#1d2323 dark:#fafafa";
+    document.getElementById("ReactJS").style = "#1d2323 dark:#fafafa";
+    document.getElementById("NextJS").style = "#1d2323 dark:#fafafa";
+    document.getElementById("Career").style = "#1d2323 dark:#fafafa";
+    setCurrentCategory(id);
+    document.getElementById(id).style.color = "#F1825E";
+  };
   return (
     <Layout>
       <SEO title="All Posts" />
-      <Bio className="my-14" />
-      {posts.map(({ frontmatter: { title, description, date }, slug }) => (
+      <link rel="icon" type="image/png" href="/static/favicon.ico" />
+      <Bio className="mt-14" />
+      <div className="mt-8 mb-12">
+        <span id="All" onClick={onCategory} className="mr-3 text-new-red font-normal text-lg font-display cursor-pointer dark:text-new-white">All</span>
+        <span id="TIL" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">TIL</span>
+        <span id="JavaScript" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">JavaScript</span>
+        <span id="ReactJS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">ReactJS</span>
+        <span id="NextJS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">NextJS</span>
+        <span id="Career" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Career</span>
+      </div>
+      {posts
+        .filter(({ frontmatter: { category } }) => category !== "All" ? category === currentCategory : "")
+        .map(({ frontmatter: { title, description, date }, slug }) => (
       <LazyLoad height={100} key={slug}>
         <Fade bottom>
         <article>

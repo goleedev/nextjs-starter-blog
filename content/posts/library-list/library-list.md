@@ -2,7 +2,7 @@
 
 title: List of Libraries for JS / React 2020 ✔️
 description: Useful libraries to use in 2020
-category: React
+category: ReactJS
 date: 2020-11-27
 
 ---

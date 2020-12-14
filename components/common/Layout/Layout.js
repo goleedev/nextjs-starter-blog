@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 
 export function Layout({ children }) {
   return (
-    <div className="w-full min-h-screen dark:bg-new-black dark:text-new-white">
+    <div className="w-screen mx-auto min-h-screen dark:bg-new-black dark:text-new-white">
       <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>

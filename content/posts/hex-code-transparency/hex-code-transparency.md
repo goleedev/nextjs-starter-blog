@@ -2,7 +2,7 @@
 
 title: Hexadecimal Color Code for Transparency 🎨
 description: Add alpha value on hex code colors!
-category: Style
+category: TIL
 date: 2020-11-23
 
 ---

@@ -3,6 +3,7 @@
 title: How to Write A Good README ✏️
 description: Best README Template for Developers in 2020
 category: TIL
+status: active
 date: 2020-12-02
 
 ---
