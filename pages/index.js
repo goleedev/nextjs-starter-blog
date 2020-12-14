@@ -7,6 +7,7 @@ import { getSortedPosts } from "@utils/posts";
 
 export default function Home({ posts }) {
   const [currentCategory, setCurrentCategory] = useState("All");
+  const [isFiltered, setIsFiltered] = useState(true);
   const onCategory = (event) => {
     const {
       target: { id },
@@ -25,12 +26,17 @@ export default function Home({ posts }) {
     document.getElementById("NextJS").style = "#1d2323 dark:#fafafa";
     document.getElementById("Career").style = "#1d2323 dark:#fafafa";
     setCurrentCategory(id);
+    if (id !== "All") {
+      setIsFiltered(false);
+    } else {
+      setIsFiltered(true);
+    }
     document.getElementById(id).style.color = "#F1825E";
   };
   return (
     <Layout>
       <SEO title="All Posts" />
-      <link rel="icon" type="image/png" href="/static/favicon.ico" />
+      <link rel="icon" type="image/png" href="./favicon.ico" />
       <Bio className="mt-14" />
       <div className="mt-8 mb-12">
         <span id="All" onClick={onCategory} className="mr-3 text-new-red font-normal text-lg font-display cursor-pointer dark:text-new-white">All</span>
@@ -40,7 +46,8 @@ export default function Home({ posts }) {
         <span id="NextJS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">NextJS</span>
         <span id="Career" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Career</span>
       </div>
-      {posts
+      {isFiltered &&
+        posts
         .map(({ frontmatter: { title, description, date }, slug }) => (
       <LazyLoad height={100} key={slug}>
         <Fade bottom>
@@ -62,6 +69,31 @@ export default function Home({ posts }) {
         </Fade>    
       </LazyLoad>
       ))}
+      {!isFiltered && 
+        posts
+        .filter(({ frontmatter: { category } }) => category === currentCategory)
+        .map(({ frontmatter: { title, description, date }, slug }) => (
+      <LazyLoad height={100} key={slug}>
+        <Fade bottom>
+        <article>
+          <header className="mb-2">
+            <h3 className="mb-2">
+              <Link href={"/post/[slug]"} as={`/post/${slug}`}>
+                <a className="text-4xl font-bold text-new-red font-display dark:text-new-light-red">
+                  {title}
+                </a>
+              </Link>
+            </h3>
+            <span className="text-sm text-new-gray dark:text-new-white">{date}</span>
+            </header>
+          <section>
+            <p className="mb-8 text-lg text-new-gray dark:text-new-white">{description}</p>
+          </section>
+        </article>
+        </Fade>    
+      </LazyLoad>
+      ))
+      }
       </Layout>
   );
 }

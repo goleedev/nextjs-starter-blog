@@ -12,7 +12,9 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
-      />
+      >
+        <link rel="shortcut icon" href="./favicon.ico" />
+      </SEO>
       <article>
         <header className="mb-8">
           <h1 className="mb-2 text-6xl font-black text-new-gray leading-none font-display dark:text-new-white">

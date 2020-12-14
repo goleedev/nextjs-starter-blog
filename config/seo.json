@@ -7,7 +7,7 @@
     },
     "description": "A blog created with Next.js and Tailwind.css",
     "siteUrl": "https://golee-blog.netlify.app/",
-    "language": "en-US",
+    "language": "en-US, ko",
     "social": {
       "instagram": "golee.dev"
     }
