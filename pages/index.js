@@ -41,7 +41,6 @@ export default function Home({ posts }) {
         <span id="Career" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Career</span>
       </div>
       {posts
-        .filter(({ frontmatter: { category } }) => category !== "All" ? category === currentCategory : "")
         .map(({ frontmatter: { title, description, date }, slug }) => (
       <LazyLoad height={100} key={slug}>
         <Fade bottom>
