@@ -1,8 +1,8 @@
 ---
 
 title: Algorithm Question 6 🧬
-category: TIL
-description: Getting ready for algorithm test! | Question 6
+category: Algorithms
+description: Getting ready for algorithmic coding tests!
 date: 2020-11-31
 
 ---
@@ -36,13 +36,6 @@ Remeber that the returned array should be in an ascendin order.
 ---
 
 ### Question 6 Answer
-
----
-title: Coding Post
-description: Coding is such a blissful activity.
-date: 2020-04-19T11:00:00.000Z
-
----
 
 ```javascript
 function solution(numbers) {

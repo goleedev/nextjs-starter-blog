@@ -1,7 +1,7 @@
 ---
 title: Algorithm Question 7 🧬
-category: TIL
-description: Getting ready for algorithm test! | Question 7
+category: Algorithms
+description: Getting ready for algorithmic coding tests!
 date: 2020-12-02
 ---
 

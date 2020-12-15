@@ -1,8 +1,8 @@
 ---
 
 title: Algorithm Question 5 🧬
-category: TIL
-description: Getting ready for algorithm test! | Question 5
+category: Algorithms
+description: Getting ready for algorithmic coding tests!
 date: 2020-11-30
 
 ---

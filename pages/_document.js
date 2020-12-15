@@ -8,9 +8,7 @@ export default class MyDocument extends Document {
 
     return (
       <Html lang={siteMetadata.language}>
-        <Head>
-          <link rel="shortcut icon" href="./favicon.ico" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
