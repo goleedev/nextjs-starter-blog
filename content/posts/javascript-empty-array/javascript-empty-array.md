@@ -2,7 +2,7 @@
 
 title: How to Empty an Array in JavaScript 📭
 description: When you need to clear out the array...
-category: JavaScript
+category: JS
 date: 2020-11-29
 
 ---

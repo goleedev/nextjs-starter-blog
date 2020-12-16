@@ -2,7 +2,7 @@
 
 title: Add Favicon on Next.js App 😲
 description: What to do to have favicon on your nextjs app
-category: NextJS
+category: TIL
 date: 2020-11-30
 
 ---

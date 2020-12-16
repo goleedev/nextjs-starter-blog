@@ -2,7 +2,7 @@
 
 title: Style NextJS App w/ Styled JSX 💅
 description: What to do to style your nextjs app
-category: NextJS
+category: TIL
 date: 2020-11-30
 
 ---

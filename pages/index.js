@@ -15,17 +15,15 @@ export default function Home({ posts }) {
     document.getElementById("All").style.fontWeight = "400";
     document.getElementById("TIL").style.fontWeight = "400";
     document.getElementById("Algorithms").style.fontWeight = "400";
-    document.getElementById("JavaScript").style.fontWeight = "400";
-    document.getElementById("ReactJS").style.fontWeight = "400";
-    document.getElementById("NextJS").style.fontWeight = "400";
+    document.getElementById("JS").style.fontWeight = "400";
+    document.getElementById("React").style.fontWeight = "400";
     document.getElementById("Career").style.fontWeight = "400";
     document.getElementById("All").classList.remove("text-new-red");
     document.getElementById("All").style = "#1d2323 dark:#fafafa";
     document.getElementById("TIL").style = "#1d2323 dark:#fafafa";
     document.getElementById("Algorithms").style = "#1d2323 dark:#fafafa";
-    document.getElementById("JavaScript").style = "#1d2323 dark:#fafafa";
-    document.getElementById("ReactJS").style = "#1d2323 dark:#fafafa";
-    document.getElementById("NextJS").style = "#1d2323 dark:#fafafa";
+    document.getElementById("JS").style = "#1d2323 dark:#fafafa";
+    document.getElementById("React").style = "#1d2323 dark:#fafafa";
     document.getElementById("Career").style = "#1d2323 dark:#fafafa";
     setCurrentCategory(id);
     if (id !== "All") {
@@ -41,11 +39,10 @@ export default function Home({ posts }) {
       <Bio className="mt-14" />
       <div className="mt-8 mb-12">
         <span id="All" onClick={onCategory} className="mr-3 text-new-red font-normal text-lg font-display cursor-pointer dark:text-new-white">All</span>
-        <span id="Algorithms" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Algorithms</span>
-        <span id="JavaScript" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">JavaScript</span>
-        <span id="ReactJS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">ReactJS</span>
-        <span id="NextJS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">NextJS</span>
         <span id="TIL" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">TIL</span>
+        <span id="Algorithms" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Algorithms</span>
+        <span id="JS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">JS</span>
+        <span id="React" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">React</span>
         <span id="Career" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Career</span>
       </div>
       {isFiltered &&

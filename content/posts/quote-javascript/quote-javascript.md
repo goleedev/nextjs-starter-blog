@@ -2,7 +2,7 @@
 
 title: How to Work with Quotes in Strings in JavaScript ✌️
 description: Handling quote signs on JS
-category: JavaScript
+category: JS
 date: 2020-11-27
 
 ---

@@ -65,7 +65,7 @@ function solution(n) {
   }
   return answer.length;
 }
-// Time Over
+// Run Time Over
 ```
 
 ```js
