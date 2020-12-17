@@ -2,7 +2,7 @@
 
 title: Pass Props Using History Object or Link Component in React ⌛
 description: How to handle when passing props in React
-category: ReactJS
+category: React
 date: 2020-12-01
 
 ---

@@ -2,7 +2,7 @@
 
 title: How to Use Emojis in React Using VSCode Extension 😎
 description: Handling emohis on react apps
-category: ReactJS
+category: React
 date: 2020-11-30
 
 ---

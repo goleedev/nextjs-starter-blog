@@ -65,6 +65,9 @@ module.exports = {
             a: {
               color: theme("colors.new-red"),
             },
+            th: {
+              color: theme("colors.new-black"),
+            }
           },
         },
 
@@ -114,6 +117,9 @@ module.exports = {
               color: theme("colors.gray.100"),
               borderLeftColor: theme("colors.gray.200"),
             },
+            th: {
+              color: theme("colors.new-white"),
+            }
           },
         },
       }),

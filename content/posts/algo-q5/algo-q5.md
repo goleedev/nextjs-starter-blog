@@ -1,6 +1,6 @@
 ---
 
-title: Algorithm Question 5 🧬
+title: Algorithm Question JadenCase 문자열 만들기 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
 date: 2020-11-30
@@ -9,18 +9,15 @@ date: 2020-11-30
 
 ## 🤦 TL; DR
 
-
-
 - Data Structures & Algorithms
   
-- Question 5 Instruction
+- Question 문제설명 - JadenCase 문자열 만들기
   
-- Question 5 Answer
-
+- Question 답안
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -30,7 +27,7 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 5 Instruction
+### 👀 Question 문제설명 - JadenCase 문자열 만들기
 
 Write a solution to return a **JadenCase string**.
 
@@ -43,9 +40,9 @@ Remember that the following strings from the capitalized letter should be in low
 | "3people unFollowed me" | "3people Unfollowed Me" |
 | "for the last week"     | "For The Last Week"     |
 
----
+<br>
 
-### Question 5 Answer
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(s) {
@@ -59,9 +56,7 @@ function solution(s) {
     return answer;
 }
 ```
-
 ---
 
 #### 🔗 Reference
-
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

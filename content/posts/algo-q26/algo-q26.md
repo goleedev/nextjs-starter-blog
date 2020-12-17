@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 직사각형 별찍기 🧬
+title: Algorithm Question 짝수와 홀수 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-16
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 직사각형 별찍기
+- Question 문제설명 - 짝수와 홀수
   
 - Question 답안
 
@@ -27,34 +27,27 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 직사각형 별찍기
+### 👀 Question 문제설명 - 짝수와 홀수
 
-이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
-별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+정수 num이 짝수일 경우 Even을 반환하고 홀수인 경우 Odd를 반환하는 함수, solution을 완성해주세요.
 
 ##### I/O Examples
 
-| n    | answer                                     |
-| :----: | :------------------------------------------: |
-| 5 3  | \*\*\*\*\*<br />\*\*\*\*\*<br />\*\*\*\*\* |
+| num  | return |
+| :----: | :----: |
+| 3    | "Odd"  |
+| 4    | "Even" |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" "); 
-    const a = Number(n[0]), b = Number(n[1]);
-    for (let i = 0; i < b; i++) { 
-        let str = ""; 
-        for(let j= 0; j< a; j++){ 
-            str = str + "*" 
-        } 
-        console.log(str) 
-    }
-});
+function solution(n) {
+  var answer;
+  n % 2 === 0 ? answer = "Even" : answer = "Odd";
+  return answer;
+}
 ```
 ---
 #### 🔗 Reference

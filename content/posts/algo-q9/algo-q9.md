@@ -11,13 +11,13 @@ date: 2020-12-14
 
 - Data Structures & Algorithms
 
-- Question 9 문제설명 - 2016년
+- Question 문제설명 - 2016년
 
-- Question 9 답안
+- Question 답안
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -29,7 +29,7 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 9 문제설명 - 2016년
+### 👀 Question 문제설명 - 2016년
 
 2016년 1월 1일은 금요일입니다. 2016년 a월 b일은 무슨 요일일까요? 두 수 a ,b를 입력받아 2016년 a월 b일이 무슨 요일인지 리턴하는 함수, solution을 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각 `SUN,MON,TUE,WED,THU,FRI,SAT`
 
@@ -38,12 +38,12 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 ##### I/O Examples
 
 | a    | b    | result |
-| ---- | ---- | ------ |
+| :----: | :----: | :------: |
 | 5    | 24   | "TUE"  |
 
----
+<br>
 
-### Question 9 답안
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(a, b) {
@@ -53,9 +53,7 @@ function solution(a, b) {
 ​    return answer = (day[date.getDay()]);
 }
 ```
-
 ---
-
 #### 🔗 Reference
 
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

@@ -2,7 +2,7 @@
 
 title: Can't perform a React state update on an unmounted component Error ⛰️
 description: Unmounted error in React? Let's fix it
-category: ReactJS
+category: React
 date: 2020-12-01
 
 ---

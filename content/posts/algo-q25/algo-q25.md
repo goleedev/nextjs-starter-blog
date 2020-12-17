@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 직사각형 별찍기 🧬
+title: Algorithm Question 자연수 뒤집어 배열로 만들기 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-16
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 직사각형 별찍기
+- Question 문제설명 - 자연수 뒤집어 배열로 만들기
   
 - Question 답안
 
@@ -27,34 +27,41 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 직사각형 별찍기
+### 👀 Question 문제설명 - 자연수 뒤집어 배열로 만들기
 
-이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
-별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
 
 ##### I/O Examples
 
-| n    | answer                                     |
-| :----: | :------------------------------------------: |
-| 5 3  | \*\*\*\*\*<br />\*\*\*\*\*<br />\*\*\*\*\* |
+| n     | return      |
+| :-----: | :-----------: |
+| 12345 | [5,4,3,2,1] |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" "); 
-    const a = Number(n[0]), b = Number(n[1]);
-    for (let i = 0; i < b; i++) { 
-        let str = ""; 
-        for(let j= 0; j< a; j++){ 
-            str = str + "*" 
-        } 
-        console.log(str) 
-    }
-});
+function solution(n) {
+  var answer = (n + "").split("").reverse().map((i) => Number(i));
+  return answer;
+}
+```
+<br>
+#### Source from Others
+
+```js
+function solution(n) {
+    // 문자풀이
+    // return (n+"").split("").reverse().map(v => parseInt(v));
+    // 숫자풀이
+    var arr = [];
+    do {
+        arr.push(n%10);
+        n = Math.floor(n/10);
+    } while (n>0);
+    return arr;
+}
 ```
 ---
 #### 🔗 Reference

@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 문자열 다루기 기본 🧬
+title: Algorithm Question x만큼 간격이 있는 n개의 숫자 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-15
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 문자열 다루기 기본
+- Question 문제설명 - x만큼 간격이 있는 n개의 숫자
   
 - Question 답안
 
@@ -27,43 +27,41 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 문자열 다루기 기본
+### 👀 Question 문제설명 - x만큼 간격이 있는 n개의 숫자
 
-문자열 s의 길이가 4 혹은 6이고, 숫자로만 구성돼있는지 확인해주는 함수, solution을 완성하세요. 예를 들어 s가 a234이면 False를 리턴하고 1234라면 True를 리턴하면 됩니다.
+함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.
 
 ##### I/O Examples
 
-| s      | answer |
-| :------: | :------: |
-| "a234" | false  |
-| "1234" | true   |
+| x    | n    | answer       |
+| :----: | :----: | :------------: |
+| 2    | 5    | \[2,4,6,8,10] |
+| 4    | 3    | \[4,8,12]     |
+| -4   | 2    | \[-4, -8]     |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-function solution(s) {
-  var answer = true;
-  var numbers = /^[0-9]+$/;
-  if (s.length === 4 || s.length === 6) {
-​    s.match(numbers) ? answer =true : answer = false;
-  } else {
-​    answer = false;
+function solution(x, n) {
+  var answer = [];
+  for (let i = 1; i <= n; i++) {
+    answer.push(i * x);
   }
-  return answer
+  return answer;
 }
 ```
 <br>
 #### Source from Others
 
 ```js
-function strToInt(str){
-  return str/1
-  }
+function solution(x, n) {
+    return Array(n).fill(x).map((v, i) => (i + 1) * v)
+}
 //
-function strToInt(str){
-  return  +str;
+function solution(x, n) {
+    return [...Array(n).keys()].map(v => (v + 1) * x);
 }
 ```
 ---

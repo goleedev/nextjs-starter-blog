@@ -2,7 +2,7 @@
 
 title: React onClick Function Error + Too Many Re-renders 🔁
 description: When getting too many re-renders error
-category: ReactJS
+category: React
 date: 2020-11-30
 
 ---

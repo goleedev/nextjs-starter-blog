@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 직사각형 별찍기 🧬
+title: Algorithm Question 정수 제곱근 판별 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-16
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 직사각형 별찍기
+- Question 문제설명 - 정수 제곱근 판별
   
 - Question 답안
 
@@ -27,34 +27,42 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 직사각형 별찍기
+### 👀 Question 문제설명 - 정수 제곱근 판별
 
-이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
-별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
+n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.
 
 ##### I/O Examples
 
-| n    | answer                                     |
-| :----: | :------------------------------------------: |
-| 5 3  | \*\*\*\*\*<br />\*\*\*\*\*<br />\*\*\*\*\* |
+| n    | return |
+| :----: | :----: |
+| 121  |  144   |
+| 3    |   -1   |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" "); 
-    const a = Number(n[0]), b = Number(n[1]);
-    for (let i = 0; i < b; i++) { 
-        let str = ""; 
-        for(let j= 0; j< a; j++){ 
-            str = str + "*" 
-        } 
-        console.log(str) 
-    }
-});
+function solution(n) {
+  var answer = 0;
+  var x = Math.sqrt(n);
+  Number.isInteger(x) ? answer = (x + 1) * (x + 1) : answer = -1;
+  return answer;
+}
+```
+<br>
+#### Source from Others
+
+```js
+function solution(n){
+  switch(n % Math.sqrt(n)){
+    case 0:
+      return Math.pow(Math.sqrt(n) + 1, 2);
+    default:
+      return -1;
+  }
+}
 ```
 ---
 #### 🔗 Reference

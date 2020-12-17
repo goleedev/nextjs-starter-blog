@@ -9,13 +9,13 @@ date: 2020-12-15
 
 - Data Structures & Algorithms
   
-- Question 14 문제설명 - 서울에서 김서방 찾기
+- Question 문제설명 - 서울에서 김서방 찾기
   
-- Question 14 답안
+- Question 답안
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -27,7 +27,7 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 14 문제설명 - 서울에서 김서방 찾기
+### 👀 Question 문제설명 - 서울에서 김서방 찾기
 
 String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.
 
@@ -35,11 +35,11 @@ String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x�
 
 | seoul           | return              |
 | --------------- | ------------------- |
-| ["Jane", "Kim"] | "김서방은 1에 있다" |
+| \["Jane", "Kim"] | "김서방은 1에 있다" |
 
----
+<br>
 
-### Question 14 답안
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(seoul) {
@@ -52,9 +52,6 @@ function solution(seoul) {
 ​    return `김서방은 ${answer}에 있다`;
 }
 ```
-
 ---
-
 #### 🔗 Reference
-
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

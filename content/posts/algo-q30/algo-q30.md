@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 문자열 다루기 기본 🧬
+title: Algorithm Question 행렬의 덧셈 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-15
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 문자열 다루기 기본
+- Question 문제설명 - 행렬의 덧셈
   
 - Question 답안
 
@@ -27,43 +27,39 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 문자열 다루기 기본
+### 👀 Question 문제설명 - 행렬의 덧셈
 
-문자열 s의 길이가 4 혹은 6이고, 숫자로만 구성돼있는지 확인해주는 함수, solution을 완성하세요. 예를 들어 s가 a234이면 False를 리턴하고 1234라면 True를 리턴하면 됩니다.
+행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
 
 ##### I/O Examples
 
-| s      | answer |
-| :------: | :------: |
-| "a234" | false  |
-| "1234" | true   |
+| arr1          | arr2          | return        |
+| :-------------: | :-------------: | :-------------: |
+| \[\[1,2],\[2,3]] | \[\[3,4],\[5,6]] | \[\[4,6],\[7,9]] |
+| \[\[1],\[2]]     | \[\[3],\[4]]     | \[\[4],\[6]]     |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-function solution(s) {
-  var answer = true;
-  var numbers = /^[0-9]+$/;
-  if (s.length === 4 || s.length === 6) {
-​    s.match(numbers) ? answer =true : answer = false;
-  } else {
-​    answer = false;
+function solution(arr1, arr2) {
+  var answer = Array();
+  for (let i = 0; i < arr1.length; i++) {
+​    answer[i] = [];
+​    for (let j = 0; j < arr1[0].length; j++) {
+​      answer[i][j] = arr1[i][j] + arr2[i][j];
+​    }
   }
-  return answer
+  return answer;
 }
 ```
 <br>
 #### Source from Others
 
 ```js
-function strToInt(str){
-  return str/1
-  }
-//
-function strToInt(str){
-  return  +str;
+function solution(arr1, arr2) {
+	return arr1.map((a,i) => a.map((b, j) => b + arr2[i][j]));
 }
 ```
 ---

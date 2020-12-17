@@ -1,9 +1,9 @@
 ---
 
-title: Algorithm Question 6 🧬
+title: Algorithm Question 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-11-31
+date: 2020-11-30
 
 ---
 
@@ -11,13 +11,13 @@ date: 2020-11-31
 
 - Data Structures & Algorithms
   
-- Question 6 Instruction
+- Question 문제설명
   
-- Question 6 Answer
+- Question 답안
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -27,15 +27,15 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 6 Instruction
+### 👀 Question 문제설명
 
 Write a solution that returns the sums of any two items from the given array.
 
 Remeber that the returned array should be in an ascendin order.
 
----
+<br>
 
-### Question 6 Answer
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(numbers) {
@@ -59,9 +59,7 @@ function solution(numbers) {
     return answer;
 }
 ```
-
 ---
-
 #### 🔗 Reference
 
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

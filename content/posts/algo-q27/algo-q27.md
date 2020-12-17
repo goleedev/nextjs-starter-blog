@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 직사각형 별찍기 🧬
+title: Algorithm Question 평균 구하기 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-16
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 직사각형 별찍기
+- Question 문제설명 - 평균 구하기
   
 - Question 답안
 
@@ -27,34 +27,33 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 직사각형 별찍기
+### 👀 Question 문제설명 - 평균 구하기
 
-이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
-별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+정수를 담고 있는 배열 arr의 평균값을 return하는 함수, solution을 완성해보세요.
 
 ##### I/O Examples
 
-| n    | answer                                     |
-| :----: | :------------------------------------------: |
-| 5 3  | \*\*\*\*\*<br />\*\*\*\*\*<br />\*\*\*\*\* |
+| arr       | return |
+| :---------: | :----: |
+| \[1,2,3,4] |  2.5   |
+| \[5,5]     |   5    |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" "); 
-    const a = Number(n[0]), b = Number(n[1]);
-    for (let i = 0; i < b; i++) { 
-        let str = ""; 
-        for(let j= 0; j< a; j++){ 
-            str = str + "*" 
-        } 
-        console.log(str) 
-    }
-});
+function solution(arr) {
+  return (arr.reduce((acc, curr) => acc + parseInt(curr), 0))/arr.length;
+}
+```
+<br>
+#### Source from Others
+
+```js
+function average(array){
+  return array.reduce((a, b) => a + b) / array.length;
+}
 ```
 ---
 #### 🔗 Reference

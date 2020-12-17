@@ -9,13 +9,13 @@ date: 2020-12-15
 
 - Data Structures & Algorithms
   
-- Question 15 문제설명 - 수박수박수박수박수박수?
+- Question 문제설명 - 수박수박수박수박수박수?
   
-- Question 15 답안
+- Question 답안
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -27,20 +27,20 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 15 문제설명 - 수박수박수박수박수박수?
+### 👀 Question 문제설명 - 수박수박수박수박수박수?
 
 길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.
 
 ##### I/O Examples
 
 | n    | return     |
-| ---- | ---------- |
+| :----: | :----------: |
 | 3    | "수박수"   |
 | 4    | "수박수박" |
 
----
+<br>
 
-### Question 15 답안
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(n) {
@@ -70,7 +70,7 @@ function solution(n) {
   return answer.join("");
 }
 ```
-
+<br>
 #### Source from Others
 
 ```js
@@ -79,9 +79,6 @@ function waterMelon(n){
   return result.substring(0,n);
 }
 ```
-
 ---
-
 #### 🔗 Reference
-
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

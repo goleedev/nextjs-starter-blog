@@ -1,15 +1,15 @@
 ---
-title: Algorithm Question 직사각형 별찍기 🧬
+title: Algorithm Question 하샤드 수 🧬
 category: Algorithms
 description: Getting ready for algorithmic coding tests!
-date: 2020-12-16
+date: 2020-12-17
 ---
 
 ## 🤦 TL; DR
 
 - Data Structures & Algorithms
   
-- Question 문제설명 - 직사각형 별찍기
+- Question 문제설명 - 하샤드 수
   
 - Question 답안
 
@@ -27,34 +27,39 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### 👀 Question 문제설명 - 직사각형 별찍기
+### 👀 Question 문제설명 - 하샤드 수
 
-이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
-별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
 
 ##### I/O Examples
 
-| n    | answer                                     |
-| :----: | :------------------------------------------: |
-| 5 3  | \*\*\*\*\*<br />\*\*\*\*\*<br />\*\*\*\*\* |
+| arr  | return |
+| :----: | :----: |
+| 10   |  true  |
+| 12   |  true  |
+| 11   | false  |
+| 13   | false  |
 
 <br>
 
 ### 👨‍💻 Question 답안
 
 ```javascript
-process.stdin.setEncoding('utf8');
-process.stdin.on('data', data => {
-    const n = data.split(" "); 
-    const a = Number(n[0]), b = Number(n[1]);
-    for (let i = 0; i < b; i++) { 
-        let str = ""; 
-        for(let j= 0; j< a; j++){ 
-            str = str + "*" 
-        } 
-        console.log(str) 
-    }
-});
+function solution(n) {
+  var answer;
+  var sumDigits = (n + "").split("").reduce((acc, curr) => acc + parseInt(curr), 0);
+  n % sumDigits === 0 ? answer = true : answer = false;
+  return answer;
+
+}
+```
+<br>
+#### Source from Others
+
+```js
+function Harshad(n){
+  return !(n%(n+'').split('').reduce(function (i, sum) {return +sum + +i;}));
+}
 ```
 ---
 #### 🔗 Reference

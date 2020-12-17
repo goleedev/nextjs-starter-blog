@@ -2,7 +2,7 @@
 
 title: How to Implement Back button in React 🔙
 description: Want to go back on page?
-category: ReactJS
+category: React
 date: 2020-11-27
 
 ---

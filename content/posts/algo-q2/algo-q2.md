@@ -11,13 +11,13 @@ date: 2020-11-27
 
 - Data Structures & Algorithms
   
-- Question 2 문제설명 - 소수 찾기
+- Question 문제설명 - 소수 찾기
   
-- Question 2 답안 
+- Question 답안 
 
 ---
 
-## Data Structures & Algorithms
+## 🗄️ Data Structures & Algorithms
 
 A computer program is **a collection of instructions to perform a specific task**. For this, a computer program may need to store data, retrieve data, and perform computations on the data.
 
@@ -27,7 +27,7 @@ And, an **algorithm** is a collection of **steps to solve a particular problem**
 
 ---
 
-### Question 2 문제설명 - 소수 찾기
+### 👀 Question 문제설명 - 소수 찾기
 
 Write a solution to find how many prime numbers are in between 1 to the given number, n.
 
@@ -41,13 +41,13 @@ Remember that n is an integer that is greater and equal to 2 and smaller and equ
 ##### I/O Examples
 
 | n    | result |
-| ---- | ------ |
+| :----: | :------: |
 | 10   | 4      |
 | 5    | 3      |
 
----
+<br>
 
-### Question 2 답안
+### 👨‍💻 Question 답안
 
 ```javascript
 function solution(n) {
@@ -67,6 +67,7 @@ function solution(n) {
 }
 // Run Time Over
 ```
+<br>
 
 ```js
 // Code from others
@@ -86,10 +87,7 @@ function solution(n) {
   return answer.length;
 }
 ```
-
-
 ---
-
 ### 🔗 Reference
 
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

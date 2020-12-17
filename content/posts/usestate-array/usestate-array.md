@@ -2,7 +2,7 @@
 
 title: How to Add to an Array in React State using Hooks ➕
 description: Handling arrays using React hooks
-category: ReactJS
+category: React
 date: 2020-12-03
 
 ---
