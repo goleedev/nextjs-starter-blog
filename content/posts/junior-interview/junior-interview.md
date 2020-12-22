@@ -32,10 +32,10 @@ date: 2020-12-22
 5. margin vs padding margin padding border을 경계로 나뉜 바깥 여백  내부 여백
 
 6. position?
-   - `absolute`: **절대 좌표**와 함께 위치를 지정해 줄 수 있습니다.
-   - `relative`: **원래 있던 위치**를 기준으로 좌표를 지정합니다.
-   - `fixed`: **스크롤과 상관없이** 좌표를 **고정**합니다.
-   - `inherit`: **부모 태그**의 속성값을 상속받습니다.
+   - absolute: **절대 좌표**와 함께 위치를 지정해 줄 수 있습니다.
+   - relative: **원래 있던 위치**를 기준으로 좌표를 지정합니다.
+   - fixed: **스크롤과 상관없이** 좌표를 **고정**합니다.
+   - inherit: **부모 태그**의 속성값을 상속받습니다.
 
 7. HTTP Request Methods Get Post Method? GET: 서버로 부터 정보를 조회하기 위한 메소드 POST: 리소스를 생성/변경하기 위해 설계된 메소드 차이: GET 동일 연산 ⇒ 동일 결과 POST: 동일 요청 ⇒ 다양한 응답
 

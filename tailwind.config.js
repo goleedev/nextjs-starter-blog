@@ -37,11 +37,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "new-red": "#F1825E",
-        "new-light-red": "#FFA88B",
-        "new-gray": "#2E343F",
-        "new-black": "#1d2323",
-        "new-white": "#fafafa",
+        "new-red": "#739CA6",
+        "new-light-red": "#99B8BF",
+        "new-gray": "#2A2F33",
+        "new-black": "#252525",
+        "new-white": "#f7f7f7",
       },
       fontSize: {
         "7xl": "4.5rem",
