@@ -19,19 +19,19 @@ export default function Home({ posts }) {
     document.getElementById("React").style.fontWeight = "400";
     document.getElementById("Career").style.fontWeight = "400";
     document.getElementById("All").classList.remove("text-new-red");
-    document.getElementById("All").style = "#1d2323 dark:#fafafa";
-    document.getElementById("TIL").style = "#1d2323 dark:#fafafa";
-    document.getElementById("Algorithms").style = "#1d2323 dark:#fafafa";
-    document.getElementById("JS").style = "#1d2323 dark:#fafafa";
-    document.getElementById("React").style = "#1d2323 dark:#fafafa";
-    document.getElementById("Career").style = "#1d2323 dark:#fafafa";
+    document.getElementById("All").style = "#252525 dark:#f7f7f7";
+    document.getElementById("TIL").style = "#252525 dark:#f7f7f7";
+    document.getElementById("Algorithms").style = "#252525 dark:#f7f7f7";
+    document.getElementById("JS").style = "#252525 dark:#f7f7f7";
+    document.getElementById("React").style = "#252525 dark:#f7f7f7";
+    document.getElementById("Career").style = "#252525 dark:#f7f7f7";
     setCurrentCategory(id);
     if (id !== "All") {
       setIsFiltered(false);
     } else {
       setIsFiltered(true);
     }
-    document.getElementById(id).style.color = "#F1825E";
+    document.getElementById(id).style.color = "#739CA6";
   };
   return (
     <Layout>

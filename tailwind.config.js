@@ -38,7 +38,7 @@ module.exports = {
     extend: {
       colors: {
         "new-red": "#739CA6",
-        "new-light-red": "#99B8BF",
+        "new-light-red": "#739CA6",
         "new-gray": "#2A2F33",
         "new-black": "#252525",
         "new-white": "#f7f7f7",
