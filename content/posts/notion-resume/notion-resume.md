@@ -1,7 +1,7 @@
 ---
 title: Notion으로 쉽고 빠르게 작성하는 Resume🧑‍💼
 description: Cool resume template on Notion
-category: Career
+category: TIL
 date: 2020-07-11
 ---
 

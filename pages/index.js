@@ -17,14 +17,14 @@ export default function Home({ posts }) {
     document.getElementById("Algorithms").style.fontWeight = "400";
     document.getElementById("JS").style.fontWeight = "400";
     document.getElementById("React").style.fontWeight = "400";
-    document.getElementById("Career").style.fontWeight = "400";
+    document.getElementById("TypeScript").style.fontWeight = "400";
     document.getElementById("All").classList.remove("text-new-red");
     document.getElementById("All").style = "#252525 dark:#f7f7f7";
     document.getElementById("TIL").style = "#252525 dark:#f7f7f7";
     document.getElementById("Algorithms").style = "#252525 dark:#f7f7f7";
     document.getElementById("JS").style = "#252525 dark:#f7f7f7";
     document.getElementById("React").style = "#252525 dark:#f7f7f7";
-    document.getElementById("Career").style = "#252525 dark:#f7f7f7";
+    document.getElementById("TypeScript").style = "#252525 dark:#f7f7f7";
     setCurrentCategory(id);
     if (id !== "All") {
       setIsFiltered(false);
@@ -43,7 +43,7 @@ export default function Home({ posts }) {
         <span id="Algorithms" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Algorithms</span>
         <span id="JS" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">JS</span>
         <span id="React" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">React</span>
-        <span id="Career" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">Career</span>
+        <span id="TypeScript" onClick={onCategory} className="mr-3 font-normal text-lg font-display cursor-pointer dark:text-new-white">TypeScript</span>
       </div>
       {isFiltered &&
         posts

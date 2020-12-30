@@ -1,6 +1,6 @@
 ---
 title: 주니어 Frontend 개발자 인터뷰 질문&답변 모음 👔 
-category: Career
+category: TIL
 description: Anything you need to know 
 date: 2020-12-22
 ---
