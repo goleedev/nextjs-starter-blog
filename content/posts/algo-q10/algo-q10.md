@@ -51,6 +51,7 @@ function solution(n) {
 ​    return answer = parseInt(newTemp, 3);
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

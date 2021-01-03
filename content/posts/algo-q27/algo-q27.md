@@ -55,6 +55,7 @@ function average(array){
   return array.reduce((a, b) => a + b) / array.length;
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

@@ -79,6 +79,7 @@ function waterMelon(n){
   return result.substring(0,n);
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

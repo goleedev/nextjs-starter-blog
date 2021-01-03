@@ -50,7 +50,6 @@ function solution(n) {
   var sumDigits = (n + "").split("").reduce((acc, curr) => acc + parseInt(curr), 0);
   n % sumDigits === 0 ? answer = true : answer = false;
   return answer;
-
 }
 ```
 <br>
@@ -61,6 +60,7 @@ function Harshad(n){
   return !(n%(n+'').split('').reduce(function (i, sum) {return +sum + +i;}));
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

@@ -61,6 +61,7 @@ function solution(n){
     return (n+"").split("").reduce((acc, curr) => acc + parseInt(curr), 0)
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

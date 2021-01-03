@@ -76,6 +76,7 @@ function numPY(s){
     return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

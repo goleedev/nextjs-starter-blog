@@ -57,6 +57,7 @@ function solution(arr, divisor) {
     return answer.sort((a, b) => a - b)
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

@@ -47,6 +47,7 @@ function solution(s) {
     return s.split('').sort().reverse().join('');
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)

@@ -2,9 +2,15 @@
   -webkit-filter: blur(5px);
   filter: blur(5px);
   transition: filter 500ms ease-in, -webkit-filter 500ms ease-in;
+  border-radius: 10px;
 }
 
 .blur.lazyloaded {
   -webkit-filter: blur(0);
   filter: blur(0);
+  border-radius: 10px;
+}
+
+.rounded-full {
+  border-radius: 50% !important;
 }

@@ -1,5 +1,5 @@
 ---
-title: TypeScript 환경 설정 (tsc-watch) Error
+title: TypeScript 환경 설정 (tsc-watch) Error 🚧
 category: TypeScript
 description: When you get an error at a specific module on TS, try this.
 date: 2020-12-30

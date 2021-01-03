@@ -87,6 +87,7 @@ function solution(n) {
   return answer.length;
 }
 ```
+<br>
 ---
 ### 🔗 Reference
 

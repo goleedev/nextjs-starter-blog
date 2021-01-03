@@ -60,6 +60,7 @@ function solution(n) {
   return +newArr;
 }
 ```
+<br>
 ---
 #### 🔗 Reference
 Source 1 - [Learn DS & Algorithms](https://www.programiz.com/dsa)
