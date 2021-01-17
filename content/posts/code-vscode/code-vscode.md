@@ -1,5 +1,5 @@
 ---
-title: VSCode에서 "code" command가 동작하지 않을 때 😓
+title: VSCode에서 code command가 동작하지 않을 때 😓
 
 description: How to make it work on MacOS!
 
