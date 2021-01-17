@@ -34,7 +34,7 @@ const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 ### onClick
 
 ```js
-fdf
-
+const onSocialClick = async (event: React.ChangeEvent<HTMLInputElement> => {
+};
 ```
 <br>
